@@ -1,0 +1,122 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+}
+body > header > h1{
+    font-family: Lobster, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+.body-main{
+
+}
+.body-main > .authors > .grid{
+    grid-template-rows: 370px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 100px;
+}
+.body-main > .authors > header{
+    font-family: Lobster, sans-serif;
+    font-size: 20px;
+}
+.author-image > img{
+    width: 100%;
+    height: 100%;
+}
+.author_description{
+    font-family: sans-serif;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.author_description:last-child{
+    width: 90%;
+}
+
+
+.infusion-content{
+    margin-bottom: 50px;
+}
+.infusion-content > main > *{
+    margin-left: 420px;
+}
+
+.infusion-content > header{
+    width: 450px;
+    margin: 0 auto ;
+}
+
+.infusion-content > header > h2 {
+    font-family: Lobster, sans-serif;
+    font-size: 40px;
+}
+
+.infusion-content  .contents{
+    width: 550px;
+    list-style: none;
+    counter-reset: li;
+}
+.infusion-content   .contents_item{
+    display: grid;
+    grid-template-columns: 35px 1fr 25px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.infusion-content   .contents_item .contents_item-title{
+
+}
+.infusion-content   .contents_item .contents_item-page{
+    text-align: right;
+}
+
+.infusion-content  .contents_item:before{
+    display: block;
+    counter-increment: li ;
+    content: counters(li,".") ;
+}
+
+.infusion-content > main >  .contents_item:first-child{
+    width: 540px;
+    grid-template-columns: 80px 1fr 25px;
+}
+
+.infusion-content > main >  .contents_item:last-child{
+    width: 540px;
+    grid-template-columns: 35px 1fr 25px;
+}
+
+.infusion-content > main >  .contents_item:last-child:before{
+    content: '';
+}
+.infusion-content > main >  .contents_item:first-child:before{
+    content: '';
+}
+
+.real-infusion-content  main > header > h3 {
+    margin: 0 0 15px;
+    font-size: 30px;
+}
+.real-infusion-content  main > article{
+    text-align: justify;
+}
+.real-infusion-content .contents{
+    width: 550px;
+    list-style: none;
+}
+
+.real-infusion-content  .contents_item{
+    margin-bottom: 5px;
+}
+
+
+.real-infusion-content  .contents_item:before{
+    content: '';
+}
+
+footer{
+    font-size: 25px;
+    text-align: right;
+}
