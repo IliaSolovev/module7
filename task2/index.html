@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task two</title>
+  </head>
+  <body>
+    <table border="1" class="table" width="100%" cellpadding="4">
+      <caption>
+        Добыча драгоценных камней
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>2010</th>
+          <th>2012</th>
+          <th>2014</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Сапфиры</td>
+          <td rowspan="2">1483</td>
+          <td>4532</td>
+          <td>3835</td>
+        </tr>
+        <tr>
+          <td>Рубины</td>
+          <td>3835</td>
+          <td>7482</td>
+        </tr>
+        <tr>
+          <td>Алмазы</td>
+          <td>683</td>
+          <td colspan="1" align="center"></td>
+          <td>238</td>
+        </tr>
+      </tbody>
+    </table>
+    <form action="" method="POST" name="pet-form">
+      <fieldset>
+        <legend>
+          <h3>Анкета питомца</h3>
+        </legend>
+        <p>
+          <input type="text" name="breed" id="breed" /><label for="breed"
+            >Порода</label
+          >
+        </p>
+        <p>
+          <input type="text" name="animal-name" id="animal-name" /><label
+            for="animal-name"
+            >Кличка</label
+          >
+        </p>
+        <p>
+          <select name="pet-color" id="pet-color">
+              <option value="tiger-color">Тигровый</option>
+              <option value="black">Чёрный</option>
+              <option value="gray">Серый</option>
+              <option value="white">Белый</option>
+              <option value="red">Красный</option>
+        </select>
+          <label for="pet-color">Выберите цвет</label>
+        </p>
+      </fieldset>
+      <button type="submit">Отправить</button>
+    </form>
+  </body>
 </html>
